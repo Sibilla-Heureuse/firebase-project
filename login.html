@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="containers-wrapper">
+        <div class="highlight-container">
+            <h1>SIGN IN</h1>
+        </div>
+        <div class="form-container">
+            <form onsubmit="event.preventDefault()"> 
+             <input type="email" placeholder="Email" id="email">
+             <input type="password" placeholder="Password" id="password">
+             <div class="btn"><button onclick="onLogin()">SIGN IN</button></div>   
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firestore-app.js"></script>
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/auth.js"></script>
+    
+</body>
+</html>
